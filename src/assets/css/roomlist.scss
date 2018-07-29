@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'DINPro-Light';
+    font-style: normal;
+    src: url('../fonts/DINPro-Light.otf');
+  }
+  
+  .settings-rooms {
+    .settings-rooms-list {
+      table {
+        clear: left;
+        table-layout: fixed;
+        width: 85%;
+        border-collapse: collapse;
+        text-align: left;
+  
+        .first-col {
+          width: 35%;
+          @media screen and (max-width: 425px) {
+            width: 30%;
+          }
+          @media screen and (min-width: 500px) and (max-width: 1023px) {
+            width: 35%;
+          }
+        }
+        .last-col {
+          width: 30%;
+          @media screen and (max-width: 425px) {
+            width: 28%;
+          }
+          @media screen and (min-width: 500px) and (max-width: 1023px) {
+            width: 33%;
+          }
+        }
+        tr {
+          padding: 1%;
+          padding-left: 25px;
+          border-bottom: 10px solid #f4f8f9;
+          font-weight: 50;
+  
+          th {
+            color: #999999;
+            padding: 1%;
+            padding-left: 2%;
+            font-size: 97%;
+            text-align: left;
+  
+            &:first-child {
+              padding-left: 6%;
+            }
+          }
+          td {
+            background: #ffffff;
+            padding: 2%;
+            color: #333e44;
+            font-size: 95%;
+            font-family: 'DINPro-Light';
+  
+            &:first-child {
+              padding-left: 6%;
+            }
+  
+            button{
+              padding: 0;
+            }
+  
+            button:nth-child(2){
+              margin-left: 10px;
+            }
+          }
+        }
+        @media screen and (max-width: 425px) {
+          width: 100%;
+          margin-right: 0;
+        }
+        @media screen and (min-width: 768) and (max-width: 1023px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
